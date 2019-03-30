@@ -11,7 +11,7 @@ public class KafkaSender {
     public void enviarMensaje(String topico, String mensaje){
         kafkaTemplate.send(topico,mensaje);
     }
-    public void enviarMensajeClave(String topico, String mensaje, String clave){
-        kafkaTemplate.send(topico,mensaje, clave);
+    public void enviarMensajeClave(String topico, String clave, String mensaje){
+        kafkaTemplate.send(topico,clave, mensaje);
     }
 }
