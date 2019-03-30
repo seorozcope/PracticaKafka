@@ -42,6 +42,6 @@ public class KafkaConf {
 
     @Bean
     public KafkaSender sender(){
-
+        return new KafkaSender();
     }
 }
