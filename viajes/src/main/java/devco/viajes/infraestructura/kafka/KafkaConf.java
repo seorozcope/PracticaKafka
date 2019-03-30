@@ -21,6 +21,7 @@ public class KafkaConf {
     @Bean
     public Map<String,Object> producerConfig(){
         Map<String,Object> propiedades = new HashMap<>();
+        //documentación de propiedades de kafka: https://kafka.apache.org/documentation/#producerconfigs
         propiedades.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,server);
         propiedades.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         propiedades.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,StringSerializer.class);
